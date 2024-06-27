@@ -2,13 +2,17 @@ body {
   background-color: #f7f7f7;
 }
 
+.window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max(692px, 100vw);
+  height: max(920px, 100vh);
+}
+
 .mainContainer {
-  position: absolute;
   width: 692px;
   height: 920px;
   background-color: white;
   border-radius: 32px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }

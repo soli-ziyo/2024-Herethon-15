@@ -11,19 +11,21 @@
     <title>회원가입</title>
   </head>
   <body>
-    <div class="mainContainer">
-      <p class="inputQuestion">
-        나의 To Do를 다른 사용자들도 볼 수 있도록 공개하시겠습니까?
-      </p>
-      <div class="choice_container">
-        <input type="radio" name="userPosition" id="공개" value="공개" />
-        <label for="공개">공개</label>
-        <input type="radio" name="userPosition" id="비공개" value="비공개" />
-        <label for="비공개">비공개</label>
+    <div class="window">
+      <div class="mainContainer">
+        <p class="inputQuestion">
+          나의 To Do를 다른 사용자들도 볼 수 있도록 공개하시겠습니까?
+        </p>
+        <div class="choice_container">
+          <input type="radio" name="userPosition" id="공개" value="공개" />
+          <label for="공개">공개</label>
+          <input type="radio" name="userPosition" id="비공개" value="비공개" />
+          <label for="비공개">비공개</label>
+        </div>
+        <button class="nextButton" onclick="location.href='fe_JoinFinish.html'">
+          회원가입 하기
+        </button>
       </div>
-      <button class="nextButton" onclick="location.href='fe_JoinFinish.html'">
-        회원가입 하기
-      </button>
     </div>
   </body>
 </html>

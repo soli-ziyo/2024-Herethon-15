@@ -12,27 +12,35 @@
     <title>회원가입</title>
   </head>
   <body>
-    <div class="mainContainer">
-      <form>
-        <div>이름</div>
-        <input id="userName" type="text" placeholder="이름" autofocus />
-        <div>아이디</div>
-        <input id="userId" type="text" placeholder="이메일" />
-        <div>비밀번호</div>
-        <input id="userPw" type="text" placeholder="비밀번호" />
-        <br />
-        <input id="userPwCheck" type="text" placeholder="비밀번호 확인" />
-      </form>
-      <p>
-        이미 등록된 계정이 있으신가요?
-        <a href="https://www.google.co.kr/?hl=ko">로그인</a>
-      </p>
-      <button
-        class="nextButton"
-        onclick="location.href='fe_inputUserPosition.html'"
-      >
-        다음으로 →
-      </button>
+    <div class="window">
+      <div class="mainContainer">
+        <form class="inputUserInfoContainer">
+          <div>
+            <p>이름</p>
+            <input id="userName" type="text" placeholder="이름" autofocus />
+          </div>
+          <div>
+            <p>아이디</p>
+            <input id="userId" type="text" placeholder="이메일" />
+          </div>
+          <div>
+            <p>비밀번호</p>
+            <input id="userPw" type="text" placeholder="비밀번호" />
+            <br />
+            <input id="userPwCheck" type="text" placeholder="비밀번호 확인" />
+          </div>
+        </form>
+        <p>
+          이미 등록된 계정이 있으신가요?
+          <a href="https://www.google.co.kr/?hl=ko">로그인</a>
+        </p>
+        <button
+          class="nextButton"
+          onclick="location.href='fe_inputUserPosition.html'"
+        >
+          다음으로 →
+        </button>
+      </div>
     </div>
   </body>
 </html>

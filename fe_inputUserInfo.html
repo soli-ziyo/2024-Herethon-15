@@ -6,29 +6,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fe_mainContainer.css" />
+
     <link rel="stylesheet" href="css/fe_nextButton.css" />
     <title>회원가입</title>
   </head>
   <body>
-    <form>
-      <div>이름</div>
-      <input id="userName" type="text" placeholder="이름" autofocus />
-      <div>아이디</div>
-      <input id="userId" type="text" placeholder="이메일" />
-      <div>비밀번호</div>
-      <input id="userPw" type="text" placeholder="비밀번호" />
-      <br />
-      <input id="userPwCheck" type="text" placeholder="비밀번호 확인" />
-    </form>
-    <p>
-      이미 등록된 계정이 있으신가요?
-      <a href="https://www.google.co.kr/?hl=ko">로그인</a>
-    </p>
-    <button
-      class="nextButton"
-      onclick="location.href='fe_inputUserPosition.html'"
-    >
-      다음으로 →
-    </button>
+    <div class="mainContainer">
+      <form>
+        <div>이름</div>
+        <input id="userName" type="text" placeholder="이름" autofocus />
+        <div>아이디</div>
+        <input id="userId" type="text" placeholder="이메일" />
+        <div>비밀번호</div>
+        <input id="userPw" type="text" placeholder="비밀번호" />
+        <br />
+        <input id="userPwCheck" type="text" placeholder="비밀번호 확인" />
+      </form>
+      <p>
+        이미 등록된 계정이 있으신가요?
+        <a href="https://www.google.co.kr/?hl=ko">로그인</a>
+      </p>
+      <button
+        class="nextButton"
+        onclick="location.href='fe_inputUserPosition.html'"
+      >
+        다음으로 →
+      </button>
+    </div>
   </body>
 </html>

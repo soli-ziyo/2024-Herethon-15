@@ -4,12 +4,7 @@
     format("woff");
 }
 
-.container {
-  display: flex;
-  gap: 10px;
-}
-
-.container {
+.choice_container {
   display: flex;
   gap: 10px;
 }

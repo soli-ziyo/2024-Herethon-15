@@ -1,0 +1,14 @@
+body {
+  background-color: #f7f7f7;
+}
+
+.mainContainer {
+  position: absolute;
+  width: 692px;
+  height: 920px;
+  background-color: white;
+  border-radius: 32px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

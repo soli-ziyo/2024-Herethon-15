@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+}
+
+.nextButton {
+  background-color: #7d08d9;
+  color: white;
+  width: 500px;
+  height: 80px;
+  border-radius: 20px;
+  border: none;
+  font-size: 24px;
+  font-family: "Pretendard-Regular";
+}

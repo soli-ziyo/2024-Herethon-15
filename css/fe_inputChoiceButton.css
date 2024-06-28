@@ -9,7 +9,7 @@
   gap: 10px;
 }
 
-label {
+.choice_label {
   border: 3px solid #7d08d9;
   color: #7d08d9;
   border-radius: 60px;

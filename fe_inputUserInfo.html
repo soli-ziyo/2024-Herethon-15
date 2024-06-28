@@ -7,6 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/fe_mainContainer.css" />
+    <link rel="stylesheet" href="css/fe_titleCodea.css" />
     <link rel="stylesheet" href="css/fe_inputUserInfo.css" />
     <link rel="stylesheet" href="css/fe_nextButton.css" />
     <title>회원가입</title>
@@ -14,6 +15,7 @@
   <body>
     <div class="window">
       <div class="mainContainer">
+        <span class="titleCodea">codea</span>
         <form class="inputUserInfoContainer">
           <div class="userInfoInput">
             <label for="userName" class="userInfo_label">이름</label>
@@ -29,16 +31,18 @@
             <input id="userPwCheck" type="text" placeholder="비밀번호 확인" />
           </div>
         </form>
-        <p>
-          이미 등록된 계정이 있으신가요?
-          <a href="https://www.google.co.kr/?hl=ko">로그인</a>
-        </p>
-        <button
-          class="nextButton"
-          onclick="location.href='fe_inputUserPosition.html'"
-        >
-          다음으로 →
-        </button>
+        <div>
+          <p class="alreadyJoined">
+            이미 등록된 계정이 있으신가요?&nbsp;&nbsp;
+            <a href="https://www.google.co.kr/?hl=ko">로그인</a>
+          </p>
+          <button
+            class="nextButton"
+            onclick="location.href='fe_inputUserPosition.html'"
+          >
+            다음으로 →
+          </button>
+        </div>
       </div>
     </div>
   </body>

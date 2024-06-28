@@ -4,6 +4,16 @@
     format("woff");
 }
 
+.alreadyJoined {
+  font-size: 20px;
+  text-align: center;
+  a {
+    color: #7d08d9;
+    font-weight: bold;
+    text-underline-position: under;
+  }
+}
+
 .nextButton {
   background-color: #7d08d9;
   color: white;

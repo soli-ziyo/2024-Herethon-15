@@ -6,13 +6,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: max(692px, 100vw);
+  width: max(1024px, 100vw);
   height: max(920px, 100vh);
 }
 
 .mainContainer {
-  width: 692px;
+  width: 1024px;
   height: 920px;
   background-color: white;
   border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

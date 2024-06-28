@@ -4,8 +4,18 @@
     format("woff");
 }
 
-.inputQuestion {
+.checkPic {
+  margin-top: 8%;
+}
+
+.helloUser {
   font-family: "Pretendard-Regular";
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
+}
+
+.loginGo {
+  font-size: 32px;
+  color: #454545;
+  margin-top: -8%;
 }

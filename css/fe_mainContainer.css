@@ -19,5 +19,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+}
+
+.contentContainer {
+  width: 100%;
+  height: 82%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10%;
 }

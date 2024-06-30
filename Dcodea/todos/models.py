@@ -1,11 +1,11 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.conf import settings
 from django.utils import timezone
 
 # Create your models here.
 
 class Todo(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)  # 사용자 정보
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)  # 사용자 정보
     description = models.CharField(max_length=255, default='')  # 작업 설명
     date = models.DateField(default=timezone.now) # 작업 날짜
     

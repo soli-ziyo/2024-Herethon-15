@@ -41,12 +41,17 @@
             />
             <label for="비공개" class="choice_label">비공개</label>
           </div>
-          <button class="nextButton" onclick="checkSelected()">
+          <button class="nextButton" onclick="gotoSignup4()">
             회원가입 하기
           </button>
         </div>
       </div>
     </div>
   </body>
+  <script type="text/javascript">
+    function gotoSignup4() {
+      window.location.href = "{% url 'accounts:signcomplete' %}";
+    }
+  </script>
   <script src="{% static 'js/inputUserOpen.js' %}" type="text/javascript"></script>
 </html>

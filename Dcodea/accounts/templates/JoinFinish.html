@@ -16,16 +16,22 @@
         <div class="titleCodea">codea</div>
         <div class="contentContainer">
           <img class="checkPic" src="{% static 'img/checkPic.png' %}" alt="checkPic" />
-          <p class="helloUser">반갑습니다, {{userName}}님!</p>
+          {% if user.is_authenticated %}
+            <p class="helloUser">반갑습니다, {{ user.username }}님!</p>
+          {% else %}
+            <p class="helloUser">반갑습니다, 회원님!</p>
+          {% endif %}
           <p class="loginGo">지금 바로 로그인 후 시작해보세요!</p>
-          <button
-            class="nextButton"
-            onclick="location.href='login.html'"
-          >
+          <button class="nextButton" onclick="gotoLogin()">
             로그인 하기
           </button>
         </div>
       </div>
     </div>
   </body>
+  <script type="text/javascript">
+    function gotoLogin() {
+      window.location.href = "{% url 'accounts:login' %}";
+    }
+  </script>
 </html>

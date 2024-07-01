@@ -24,8 +24,10 @@
       <nav>
         <div class="logo">codea</div>
         <button class="menu" id="home">홈</button>
-        <button class="menu" id="search">탐색</button>
-        <button class="menu" id="logout">로그아웃</button>
+          <button class="menu" id="search">탐색</button>
+        <a href="{% url 'accounts:logout' %}">
+          <button class="menu" id="logout">로그아웃</button>
+        </a>
       </nav>
 
       <hr />
@@ -34,7 +36,7 @@
         <div class="profile_container">
           <img src="{% static 'img/profile.svg' %}" class="profile_img" />
           <div class="profile_info">
-            <div class="profile_name">{{ userName }}</div>
+            <div class="profile_name">{{ user.username }}</div>
             <br />
             <div class="profile_tag">{{ userPosition }}</div>
           </div>

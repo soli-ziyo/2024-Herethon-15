@@ -2,8 +2,8 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import authenticate, login, logout 
 
-from .forms import SignUpForm
-from users.models import User
+from accounts.forms import SignUpForm
+from accounts.models import CustomUser
 
 # Create your views here.
 
@@ -19,7 +19,7 @@ def signup_view(request):
             user.save()
             # 세션에 사용자 ID 저장
             request.session['user_id'] = user.id
-            request.session['userName'] = user.userName  # 사용자 이름 세션에 저장
+            request.session['userName'] = user.username # 사용자 이름 세션에 저장
             return redirect('signup2')  
         else:
             return render(request, 'inputUserInfo.html', {'form': form})
@@ -34,7 +34,7 @@ def inputUserPosition(request):
             return redirect('signup_view')
         
         selected_position = request.POST.get('userPosition')
-        user = User.objects.get(id=user_id)
+        user = CustomUser.objects.get(id=user_id)
         user.userPosition = selected_position
         user.save()
 
@@ -50,7 +50,7 @@ def inputUserOpen(request):
             return redirect('signup_view')
 
         selected_open = request.POST.get('userOpen')
-        user = User.objects.get(id=user_id)
+        user = CustomUser.objects.get(id=user_id)
         user.userOpen = selected_open
         user.save()
 
@@ -66,11 +66,11 @@ def signComplete(request):
         if user_id is None:
             return redirect('signup_view')
 
-        user = User.objects.get(id=user_id)
+        user = CustomUser.objects.get(id=user_id)
         user.save()
 
         # 회원가입 완료 페이지로 리다이렉트 
-        return redirect('signup_view', {'userName' : user.userName})
+        return redirect('signup_view', {'userName' : user.username})
 
 def login_view(request):
     if request.method == 'POST':

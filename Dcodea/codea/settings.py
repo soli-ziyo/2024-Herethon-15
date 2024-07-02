@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'todos',
     'accounts',
+    'search',
 ]
 
 MIDDLEWARE = [
@@ -122,6 +123,8 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR, 'accounts', 'static'),
+    os.path.join(BASE_DIR, 'todos', 'static'),
+
 ]
 
 STATIC_ROOT= os.path.join('staticfiles')

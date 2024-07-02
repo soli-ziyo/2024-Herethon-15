@@ -24,9 +24,9 @@
       <nav>
         <div class="logo">codea</div>
         <button class="menu" id="home">홈</button>
-          <button class="menu" id="search">탐색</button>
-        <a href="{% url 'accounts:logout' %}">
-          <button class="menu" id="logout">로그아웃</button>
+        <button class="menu" id="search">탐색</button>
+        <a href="{% url 'accounts:logout' %}"> 
+          <button class="menu" id="logout">로그아웃</button> 
         </a>
       </nav>
 
@@ -36,12 +36,12 @@
         <div class="profile_container">
           <img src="{% static 'img/profile.svg' %}" class="profile_img" />
           <div class="profile_info">
-            <div class="profile_name">{{ user.username }}</div>
+            <div class="profile_name">{{ userName }}</div>
             <br />
             <div class="profile_tag">{{ userPosition }}</div>
           </div>
         </div>
-        <div class="intro_box">introduction...</div>
+        <textarea class="intro_box" placeholder="introduction..."></textarea>
         <div class="show_cheer">
           <div class="cheer_icon">받은응원</div>
           <div class="cheer_icon">
@@ -51,12 +51,28 @@
         </div>
       </section>
 
-      <section class="todo_callender">
-        <div class="callender_text">
-          <img src="{% static 'img/callender_icon.svg' %}" />
+      <section class="todo_calendar">
+        <div class="calendar_text">
+          <img src="{% static 'img/calendar_icon.svg' %}" />
           <span id="current_date"></span>
         </div>
-        <div class="callender_box"></div>
+        <div class="calendar_container">
+          <div class="calendar_box"></div>
+          <div class="ratio_box" style="--index: 0; --row: 0"></div>
+        </div>
+      </section>
+
+      <section class="worry_container">
+        <div class="worry_text">고민이 있나요?</div>
+        <div class="worry_text_detail">
+          익명으로 고민을 공유하고 동료 개발자들에게 피드백을 받아보세요!
+        </div>
+        <textarea
+          class="worry_box"
+          placeholder="고민을 입력해보세요!"
+        ></textarea>
+        <button class="send_btn"></button>
+        <button class="comment_btn"></button>
       </section>
 
       <section class="todo_list">
@@ -65,7 +81,6 @@
           Today
           <img src="{% static 'img/add_icon_circle.svg' %}" />
         </button>
-        <br />
         <br />
         <input
           type="text"
@@ -76,10 +91,14 @@
         <ul id="todo_list" style="list-style-type: none"></ul>
         <br /><br />
         <button class="add_list">
-          <img src="{% static 'img/add_icon.svg' %}" />목록추가
+          <img src="{% static 'img/add_icon.svg' %}" />
         </button>
+        </section>
       </section>
       <script src="{% static 'js/main.js' %}"></script>
     </div>
   </body>
+  <script>
+    const addIconUrl = "{% static 'img/add_icon_circle.svg' %}";
+  </script>
 </html>

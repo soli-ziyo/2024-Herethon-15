@@ -7,6 +7,7 @@ from .forms import TodoForm
 
 @login_required
 def todo(request):
+    todos= Todo.objects.all() #db에 저장된 내용 모두 불러오기
     if request.method == 'POST':
         form = TodoForm(request.POST)
         if form.is_valid():
@@ -18,4 +19,7 @@ def todo(request):
         form = TodoForm()
 
     todos = Todo.objects.filter(user=request.user).order_by('date')
-    return render(request, 'main.html', {'form': form, 'todos': todos, 'userName': request.user.username, 'userPosition': 'Your Position Here'})
+    return render(request, 'main.html', 
+                  {'form': form, 'todos': todos, 
+                   'userName': request.user.username, 
+                   'userPosition': request.user.userPosition})

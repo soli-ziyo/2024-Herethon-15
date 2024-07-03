@@ -41,10 +41,14 @@
             <div class="profile_tag">{{ userPosition }}</div>
           </div>
         </div>
-        <textarea class="intro_box" placeholder="introduction..."></textarea>
+        <form method="POST">
+          {% csrf_token %}
+          {{ profile_form.as_p }}
+          <textarea class="intro_box" placeholder="introduction...">{{ user_profile.introduction }}</textarea>
+        </form>
         <div class="show_cheer">
           <div class="cheer_icon">받은응원</div>
-          <div class="cheer_icon">
+          <div class="cheer_icon">  
             <img src="{% static 'img/cheer_fist.svg' %}" />
             <div class="cheer_cnt">16</div>
           </div>
@@ -78,27 +82,34 @@
       <section class="todo_list">
         <br />
         <button class="todo_input">
-          Today
-          <img src="{% static 'img/add_icon_circle.svg' %}" />
+            Today
+            <img src="{% static 'img/add_icon_circle.svg' %}" />
         </button>
         <br />
-        <input
-          type="text"
-          class="input_field"
-          id="input_field"
-          placeholder="할 일 입력"
-        />
-        <ul id="todo_list" style="list-style-type: none"></ul>
+        <form method="POST" action="{% url 'todo' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">추가</button>
+        </form>
+        <ul id="todo_list" style="list-style-type: none">
+            {% for todo in todos %}
+            <li>
+                <input type="checkbox" class="checkbox" {% if todo.completed %}checked{% endif %}>
+                <span class="todo_text">{{ todo.input_field }}</span>
+                <button class="edit_btn"></button>
+                <button class="del_btn"></button>
+            </li>
+            {% endfor %}
+        </ul>
         <br /><br />
         <button class="add_list">
-          <img src="{% static 'img/add_icon.svg' %}" />
+            <img src="{% static 'img/add_icon.svg' %}" />
         </button>
-        </section>
-      </section>
-      <script src="{% static 'js/main.js' %}"></script>
-    </div>
-  </body>
-  <script>
+    </section>
+</div>
+<script src="{% static 'js/main.js' %}"></script>
+<script>
     const addIconUrl = "{% static 'img/add_icon_circle.svg' %}";
-  </script>
+</script>
+</body>
 </html>

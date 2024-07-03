@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include 
 import todos.views
 import accounts.views
+import search.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),

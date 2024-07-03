@@ -1,10 +1,12 @@
 from django import forms
-from .models import Todo
+from .models import Todo, UserProfile
 
 class TodoForm(forms.ModelForm):
     class Meta:
         model = Todo
-        fields = ['description', 'date']
-        widgets = {
-            'date': forms.DateInput(attrs={'type': 'date'}),
-        }
+        fields = ['input_field']
+
+class IntroductionForm(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['introduction']

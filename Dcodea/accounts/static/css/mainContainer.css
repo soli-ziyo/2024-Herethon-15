@@ -1,0 +1,39 @@
+body {
+  background-color: #f7f7f7;
+  margin: 0px;
+}
+
+.window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max(99vw, 1024px);
+  height: max(99vh, 849px);
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: flex;
+}
+
+.mainContainer {
+  width: 1024px;
+  height: 950px;
+  background-color: white;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentContainer {
+  width: 1024px;
+  height: 766px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}

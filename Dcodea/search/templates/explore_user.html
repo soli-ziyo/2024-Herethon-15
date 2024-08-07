@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>codea : 여성 개발자들의 놀이터</title>
+    <link rel="stylesheet" href="{% static 'css/explore_user.css' %}" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav_container"></div>
+        <div class="logo">codea</div>
+        <button class="menu" id="home" onclick="location.href='{% url 'todo' %}'">홈</button>
+        <button class="menu" id="search" onclick="location.href='{% url 'search:search' %}'">탐색</button>
+        <button class="menu" id="point" onclick="location.href='{% url 'point' %}'">포인트</button>
+        <button class="menu" id="logout" onclick="location.href='{% url 'accounts:logout' %}'">
+          로그아웃
+        </button>
+      </nav>
+
+      <hr />
+
+      <section>
+        <div class="profile_container">
+          <img src="{% static 'img/profile.svg' %}" class="profile_img">
+          <input type="file" class="real-upload" name="profile_image" accept="image/*" style="display: none">
+
+          <div class="profile_info">
+            <div class="profile_name">{{user.username}}</div>
+            <br />
+            <div class="profile_tag">{{user.userPosition}}</div>
+          </div>
+          <button class="cheer_btn">
+            응원하기 <img src="{% static 'img/cheer_fist.svg' %}">
+          </button>
+        </div>
+        <form method="post" name="introduction_form">
+          {% csrf_token %}  
+        <div class="intro_box">{{ user_profile.introduction }}
+        </div>
+        <button class="follow_btn" id="follow_btn">팔로우</button>
+        <button class="DM_btn">DM</button>
+        </div>
+      </section>
+
+      <section class="todo_calendar">
+        <div class="calendar_text">
+          <img src="{% static 'img/calendar_icon.svg' %}" />
+          <span id="current_date"></span>
+        </div>
+        <div class="calendar_container">
+          <div class="calendar_box"></div>
+          <div class="ratio_box"></div>
+        </div>
+      </section>
+
+      <section class="todo_list">
+        <br />
+        <button class="today_banner">
+          Today
+        </button>
+        <br />
+        <br />
+        <ul id="todo_list" style="list-style-type: none"></ul>
+        <br /><br />
+      </section>
+      <script src="{% static 'js/explore_user.js' %}"></script>
+    </div>
+  </body>
+</html>
+

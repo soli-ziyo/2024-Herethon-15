@@ -1,0 +1,15 @@
+.error_text {
+	width: 337px;
+	height: 24px;
+	font-family: Pretendard;
+	font-size: 20px;
+	color: #f7371d;
+  }
+  
+  .li_email_input {
+	border: 4px solid #f7371d;
+  }
+  
+  .li_pw_input {
+	border: 4px solid #f7371d;
+  }

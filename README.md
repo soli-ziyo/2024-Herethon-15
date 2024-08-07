@@ -113,24 +113,7 @@
   ```
 <br/>
   - **장표**
-    ![1](https://github.com/user-attachments/assets/409e4f09-db75-4fc2-bcf4-961129b47440)
-    ![2](https://github.com/user-attachments/assets/3683239b-d62f-4f30-ad82-8cf4e5eef7b7)
-    ![3](https://github.com/user-attachments/assets/8e525b99-3548-45ea-bba0-e75f64ffe834)
-    ![4](https://github.com/user-attachments/assets/9f224bb5-950c-4276-aa10-8de857d176a9)
-    ![5](https://github.com/user-attachments/assets/b2619861-d55c-444c-9426-33e43579575b)
-    ![6](https://github.com/user-attachments/assets/5db87e15-577b-4051-9dfe-3363677ead10)
-    ![7](https://github.com/user-attachments/assets/80857cfc-2512-47ea-ba7a-859ddec25779)
-    ![8](https://github.com/user-attachments/assets/d1cdec6d-dfc4-4b68-b516-9e3db51a92fb)
-    ![9](https://github.com/user-attachments/assets/ffe85294-b197-48c5-9f55-7d1f98b95046)
-    ![10](https://github.com/user-attachments/assets/dec1c5f4-483f-49d0-a718-29e99cc37ca6)
-    ![11](https://github.com/user-attachments/assets/a0e44fa4-f51b-4eb6-a523-049ce59018f2)
-    ![12](https://github.com/user-attachments/assets/a5049919-d594-4fe8-9de6-ee0a10b094b8)
-    ![13](https://github.com/user-attachments/assets/7ffc66dd-cd69-43d3-ade8-5fc4351d1b7e)
-    ![14](https://github.com/user-attachments/assets/13a24ea9-af10-45fa-9a7d-80b0609bd275)
-    ![15](https://github.com/user-attachments/assets/1a6e7562-6562-4d52-bb06-f6dee1880091)
-    ![16](https://github.com/user-attachments/assets/520fec45-61ee-4308-a06a-c58680208f99)
-    ![17](https://github.com/user-attachments/assets/0ed16080-29c9-4751-89f1-47c1f03fc13f)
-    ![18](https://github.com/user-attachments/assets/faefbc3c-a2c4-4d2b-af02-e83e6fc7c3aa)
+
 
 
 

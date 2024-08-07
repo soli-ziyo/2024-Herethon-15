@@ -100,7 +100,7 @@
       +---templates
       \---__pycache__
   ```
-<br/>
+
 - **개발환경에서의 실행 방법**
   
   ```
@@ -111,8 +111,28 @@
   $ cd Dcodea
   $ python manage.py runserver
   ```
-<br/>
-  - **장표**
+
+- **장표**
+  ![1](https://github.com/user-attachments/assets/24ecd013-2e0b-4acb-bfa9-8e3abf260227)
+  ![2](https://github.com/user-attachments/assets/40aa87e1-9450-4e00-a935-807feea47d2b)
+  ![3](https://github.com/user-attachments/assets/69085069-d4c7-4e44-ad68-1e7ba591463f)
+  ![4](https://github.com/user-attachments/assets/ab53ed63-fcd6-4087-b391-8b841b3d7d4d)
+  ![5](https://github.com/user-attachments/assets/f996b483-9492-4d43-937e-dbbe45261296)
+  ![6](https://github.com/user-attachments/assets/2607654f-080f-490c-a2e5-2ce3efe14327)
+  ![7](https://github.com/user-attachments/assets/49f84810-e377-4e77-9912-19a4a7b90ebb)
+  ![8](https://github.com/user-attachments/assets/5124df78-c661-4a0d-ad84-a869d79b74e3)
+  ![9](https://github.com/user-attachments/assets/371086ac-10e4-40b1-8839-fbe394036fe3)
+  ![10](https://github.com/user-attachments/assets/a704fac3-a394-4011-b312-1527480b9e55)
+  ![11](https://github.com/user-attachments/assets/f002acef-8f97-4b51-b496-31023fbf3b4d)
+  ![12](https://github.com/user-attachments/assets/3564ad0f-5667-4b43-a907-3910247094aa)
+  ![13](https://github.com/user-attachments/assets/c91b538a-b8f3-4c34-8326-a46ffd3a1da1)
+  ![14](https://github.com/user-attachments/assets/3a6cd367-b21b-4360-a4d9-7f7ac23c6489)
+  ![15](https://github.com/user-attachments/assets/e4147e2d-7783-475b-92c7-18566f9c47c2)
+  ![16](https://github.com/user-attachments/assets/d9e89a30-6aa9-4372-93d2-4197d6dd339e)
+  ![17](https://github.com/user-attachments/assets/3f30596e-2ea6-4f85-83d4-800912ceb7b2)
+  ![18](https://github.com/user-attachments/assets/ffd98237-a9a6-4001-96a5-eee169f220be)
+
+
 
 
 

@@ -5,8 +5,9 @@
 <hr/>
 
 - **서비스 소개** <br/><br/>
+  ![1](https://github.com/user-attachments/assets/7367b974-da88-465e-a1a9-22d2a8010e24) 
   <h3>코데아(codea)</h3> <strong>여성</strong>을 위한, 그리고 <strong>성장</strong>을 위한 서비스 <br/><br/>
-  ![1](https://github.com/user-attachments/assets/7367b974-da88-465e-a1a9-22d2a8010e24)
+  
 
   '코데아'는 그리스시대 여성의 이름에 쓰인 어미 -아 와 이데아의 이중의미를 담고있습니다.<br/>
   일상적인 생활에서 목표하는 바를 조금씩 정리하며 이상을 추구하는 모든 주니어, 시니어 여성 개발자들을 위한 투두 기록 서비스를 제공합니다.
@@ -115,7 +116,7 @@
   ```
 
 - **장표**
-  
+- 
   ![2](https://github.com/user-attachments/assets/40aa87e1-9450-4e00-a935-807feea47d2b)
   ![3](https://github.com/user-attachments/assets/69085069-d4c7-4e44-ad68-1e7ba591463f)
   ![4](https://github.com/user-attachments/assets/ab53ed63-fcd6-4087-b391-8b841b3d7d4d)
